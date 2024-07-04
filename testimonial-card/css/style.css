@@ -1,0 +1,78 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+
+
+:root {
+  --white: #ffffff;
+  --dark: #171717;
+  --grey: #525252;
+  --shade: linear-gradient(to right, #F9FAFB, #D2D6DB);
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  background-color: var(--shade);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+
+.my-card {
+  display: flex;
+  margin: auto;
+  width: 340px;
+  flex-direction: row;
+  border: 2px solid var(--grey);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 200px;
+  flex-direction: column;
+  background-color: var(--white);
+}
+.my-card-header {
+  display: flex;
+  gap: 10px;
+}
+.my-card-image {
+  width: 48px;
+  margin: 10px;
+}
+.my-card-name {
+  align-content: center;
+}
+.my-card-name h1 {
+  color: var(--dark);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.25rem;
+}
+.my-card-content {
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  padding: 10px;
+}
