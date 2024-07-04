@@ -6,7 +6,7 @@
   --white: #ffffff;
   --dark: #171717;
   --grey: #525252;
-  --shade: linear-gradient(to right, #F9FAFB, #D2D6DB);
+  --shade: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
 }
 
 body {
@@ -19,12 +19,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  display: flex;
-  background-color: var(--shade);
+  background: var(--shade);
+  height: 100vh;
+  display: flex;justify-content: center;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .credits {
@@ -41,38 +43,56 @@ body {
   font-weight: bold;
 }
 
-
-.my-card {
+.container {
   display: flex;
-  margin: auto;
-  width: 340px;
-  flex-direction: row;
-  border: 2px solid var(--grey);
-  border-radius: 10px;
-  padding: 10px;
+  justify-content: center;
   margin-top: 200px;
-  flex-direction: column;
-  background-color: var(--white);
+  height: max-content;
 }
-.my-card-header {
+
+.testimonial-card {
+  width: 340px;
+  background: var(--white);
+  padding: 24px;
   display: flex;
-  gap: 10px;
-}
-.my-card-image {
-  width: 48px;
-  margin: 10px;
-}
-.my-card-name {
-  align-content: center;
-}
-.my-card-name h1 {
-  color: var(--dark);
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 18px;
-  line-height: 1.25rem;
-}
-.my-card-content {
-  border: 1px solid var(--dark);
+  flex-direction: column;
   border-radius: 10px;
-  padding: 10px;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+  gap: 16px;
+  color: var(--grey);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.testimonial-card__author {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.testimonial-card__author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.testimonial-card__author__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-card__author__info__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--dark);
+}
+
+.testimonial-card__author__info__username {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
