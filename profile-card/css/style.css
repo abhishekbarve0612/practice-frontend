@@ -14,6 +14,7 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .credits {
@@ -28,4 +29,100 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  padding: 24px 16px;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+  background-color: #FFF;
+  gap: 16px;
+  height: max-content;
+  width: 340px;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.card-profile-image {
+  width: 64px;
+  height: 64px;
+}
+
+.card-profile-user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-profile-user-details-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171717;
+  text-align: center;
+}
+
+.card-profile-user-details-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #525252;
+}
+
+.card-profile-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #525252;
+}
+
+.card-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.card-contact-button {
+  width: 100%;
+  background-color: #4338CA;
+  padding: 10px;
+  border-radius: 4px;
+  color: #FFF;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-contact-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card-contact-social i  {
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  color: #4338CA;
 }
